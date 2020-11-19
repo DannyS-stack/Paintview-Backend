@@ -11,6 +11,16 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      BrandId:{
+        type: Sequelize.INTEGER,
+        references: {
+          model: "brands",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "SET NULL",
+
+      },
       paintRating: {
         type: Sequelize.INTEGER
       },
