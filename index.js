@@ -1,5 +1,7 @@
 require(`dotenv`).config();
-import userRouter from "./routers/userRouter"
+const express = require("express") 
+
+const userRouter = require("./routers/userRouter") 
 const cors = require("cors");
 
 const PORT = 4000;
