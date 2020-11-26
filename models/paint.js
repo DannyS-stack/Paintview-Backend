@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
   paint.init({
     name: DataTypes.STRING,
     paintRating: DataTypes.INTEGER,
-    image: DataTypes.STRING
+    image: DataTypes.STRING,
+    BrandId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'paint',
